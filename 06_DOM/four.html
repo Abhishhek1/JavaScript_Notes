@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <ul class="language">
+        <li> JavaScript </li>
+    </ul>
+</body>
+
+<script>
+
+    //Adding Element
+
+    // first method as discuss in three.html
+    function addLanguage(langName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage("Python")
+    addLanguage("TypeScript")
+
+    // Second method as discuss in three.html
+
+    function addOptiLang(langName) {
+        const li = document.createElement('li') 
+        li.appendChild(document.createTextNode(langName))
+
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addOptiLang("HTML")
+
+    // Edit and element
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    const newLi = document.createElement('li')
+
+    newLi.appendChild(document.createTextNode("Mojo"))
+
+    secondLang.replaceWith(newLi)
+
+    // Second Example of edit here all html tag will change
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = "<li>TypeScript</li>"
+
+    //remove 
+
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+    
+</script>
+</html>

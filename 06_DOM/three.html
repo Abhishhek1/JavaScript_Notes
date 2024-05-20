@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <script>
+        const div = document.createElement('div')
+        console.log(div);
+
+        div.className = "main"
+        div.id = "myId"
+        div.style.backgroundColor = "green"
+        div.style.padding = "25px"
+
+     // 1. first Method to add text
+        //  div.innerHTML= "Hello"
+
+    // 2. Second Method to add text
+        const addText = document.createTextNode("Hello")
+        div.appendChild(addText)
+
+    // Now final step to attach it in screen
+        document.body.appendChild(div)
+
+    </script>
+</body>
+</html>

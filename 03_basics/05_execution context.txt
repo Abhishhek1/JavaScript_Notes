@@ -1,0 +1,52 @@
+ *JavaScript Execution Context*
+=> it means any file made in javascript how it will run.
+(meaning of javascript execution context)
+
+
+  JavaScript run your code in two phase.
+  the first thing made when excution happen is global execution contxt 
+ {} => Global Execution context
+    => Functional Execution Context
+  
+
+  {} => bunch of javascript code and its phases:
+  1. Memory Creation Phase
+  2. Execution Phase
+
+notes => javascript run on a single thread which means it has a single  thread line exuction happend one by one before the upper line execution seconf line will not execute.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                                      +
+let val = 10                                                          +
+let val = 5                                           
+
+function addNum(num1, num2){
+    let total = num1 + num2
+    return total
+}
+
+let result1 = addNum(val1, val2)
+let result2 = addNum(10, 2)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+how the upper code will execute
+=> steps:
+
+1. Global Execution -> this
+
+2. memory creation phase(here all memory bring together)
+   -> val1 ->undefined
+      val2 ->undefined
+      addNum-> defination
+      result1 -> undefined
+      result2 -> undefined
+
+3. Execution Phase
+   val1 <- 10
+   val1 <- 5
+   addNum -> (new variable + execution thread) => this means again for the function it will do same steps from starting
+
+
+
+this mutliple methods and function follow the LIFO means last in first out

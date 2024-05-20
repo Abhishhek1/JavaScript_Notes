@@ -1,0 +1,17 @@
+=>JavaScript 
+            -> Synchronus
+            ->Single threaded language
+
+ **Blocking Code Vs Non Blocking Code**
+
+ Blocking code => Block the Flow of Program => Read the file synchronously
+
+ Non Blocking code => Will not block the program => Read the file Asynchrounously
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+ JS Engine:
+ It is made from Memory heap and call stack.
+ 
+
