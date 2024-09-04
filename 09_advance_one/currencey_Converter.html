@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0e5c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.converter-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.converter h2 {
+    margin-bottom: 20px;
+}
+
+.converter label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.converter input, .converter select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.currency-section {
+    display: flex;
+    align-items: center;
+}
+
+.currency-section img {
+    width: 40px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+#exchange-rate {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+# get-rate {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+# get-rate:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="converter-container">
+        <h2>Currency Converter</h2>
+        <div class="converter">
+            <label for="amount">Enter Amount</label>
+            <input type="number" id="amount" placeholder="100">
+
+            <label>From</label>
+            <div class="currency-section">
+                <img src="https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-xl.png" alt="USA Flag">
+                <select id="from-currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <!-- Add more currencies as needed -->
+                </select>
+            </div>
+
+            <label>To</label>
+            <div class="currency-section">
+                <img src="https://www.countryflags.com/wp-content/uploads/india-flag-png-xl.png" alt="India Flag">
+                <select id="to-currency">
+                    <option value="INR">INR</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <!-- Add more currencies as needed -->
+                </select>
+            </div>
+
+            <button id="get-rate">Get Exchange Rate</button>
+            <p id="exchange-rate">1 USD = 80 INR</p>
+        </div>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>
